@@ -1,0 +1,22 @@
+{
+  "name": "Neighborhood_Map",
+  "authors": [
+    "<Hakki Suman> <<sumanhakki@gmail.com>>"
+  ],
+  "description": "Udacity Project",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "knockout": "knockoutjs#^3.4.2",
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1"
+  }
+}

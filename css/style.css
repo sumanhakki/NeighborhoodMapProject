@@ -1,0 +1,150 @@
+	html,
+body {
+	padding: 0px;
+	margin: 0px;
+}
+
+.title {
+	text-align: center;
+	margin: auto;
+}
+
+.container-1 {
+	max-width: 1400px;
+	margin: 10px 10px;
+	display: flex;
+	background-color: #ccb9da;
+}
+
+.infoBox {
+	box-sizing: border-box;
+	padding: 10px;
+	margin: 10px;
+	background-color: #cdf1c3;
+	justify-content: center;
+	flex: order: 1;
+	flex-basis: 19%;
+	height: 575px;
+}
+
+.mapCanvas {
+	box-sizing: border-box;
+	background-color: #ccb9da;
+	padding: 10px;
+	margin: 10px;
+	flex: 1;
+	order: 2;
+	height: 575px;
+}
+
+.input {
+	font-size: 14px;
+	font-family: Helvetica, sans-serif;
+	margin: 20px 30px 20px 30px;
+}
+
+.list-type1 {
+	width: 200px;
+	margin: 20px auto;
+}
+
+.listul {
+	counter-reset: li;
+	list-style: none;
+	font-size: 15px;
+	font-family: 'Raleway', sans-serif;
+	padding: 0;
+	margin-bottom: 4em;
+}
+
+.list-type1 ul ul {
+	margin: 0 0 0 2em;
+}
+
+.listli {
+	display: block;
+	padding: .4em .4em .4em 2em;
+	margin: .5em 0;
+	background: #93C775;
+	color: #000;
+	text-decoration: none;
+	-moz-border-radius: .3em;
+	-webkit-border-radius: .3em;
+	border-radius: 10em;
+	transition: all .2s ease-in-out;
+}
+
+.listli:hover {
+	background: #d6d4d4;
+	cursor: pointer;
+	text-decoration: none;
+	transform: scale(1.1);
+}
+
+.listli:before {
+	position: absolute;
+	left: -2.3em;
+	top: 50%;
+	margin-top: -1.3em;
+	background: #93C775;
+	height: 2em;
+	width: 2em;
+	line-height: 2em;
+	border: .3em solid #fff;
+	text-align: center;
+	font-weight: bold;
+	-moz-border-radius: 2em;
+	-webkit-border-radius: 2em;
+	border-radius: 2em;
+	color: #FFF;
+}
+
+.error {
+	color: red;
+	text-align: center;
+}
+
+@media only screen and (max-width: 750px) {
+	.infoBox {
+		box-sizing: border-box;
+		padding: 5px;
+		margin: 5px;
+		background-color: #cdf1c3;
+		justify-content: center;
+		flex: 2;
+		order: 1;
+		flex-basis: 10%;
+		height: 325px;
+	}
+	#infoWindow {
+		width: 100px;
+		height: 100px;
+	}
+	#fsqpic {
+		display: none;
+	}
+	.input {
+		display: none;
+	}
+	.title {
+		font-size: 15px;
+	}
+	.mapCanvas {
+		box-sizing: border-box;
+		background-color: #ccb9da;
+		padding: 10px;
+		margin: 10px;
+		flex: 1;
+		order: 2;
+		flex-basis: 90%;
+		height: 575px;
+	}
+	.list-type1 {
+		width: auto;
+		margin: 20px auto;
+	}
+	.listli {
+		border-radius: 5px;
+		padding: 0;
+		margin: 5px;
+	}

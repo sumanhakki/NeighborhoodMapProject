@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Hakki Suman">
+    <title>Neighborhood Map</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <div class="container-1">
+        <div class="infoBox ">
+
+            <div>
+                <h3 class="title">Colorado Ski</h3>
+                <h3 class="title">Resorts</h3>
+                <input type="text" placeholder="Type Resort Name" class="input" id="name" data-bind="textInput: resortNameFilter, event: {keyup: filterMarkers}">
+
+                <div class="list-type1">
+                    <ul class="listul" data-bind="foreach: showListItem">
+                        <li class="listli" data-bind="text: name, click: $parent.showInfo"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="mapCanvas" id="map-canvas"></div>
+
+    </div>
+    <div class="error" id="error"></div>
+
+
+
+
+
+    <script src="bower_components/knockout/dist/knockout.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkA9Jnwn2TjIcatWuVJK0G6wFY_EyNPJo&v=3&callback=initMap"></script>
+    <script src="js/nmapp.js"></script>
+</body>
+
+</html>
