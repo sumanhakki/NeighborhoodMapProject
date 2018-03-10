@@ -119,7 +119,7 @@
                     google.maps.event.trigger(resortItem.marker, 'click');
                     self.populateInfoWindow(this, infowindow);
 
-                }
+                };
                 // Close previous marker's infowindow if another one is clicked
                 populateInfoWindow = function(marker, infowindow) {
 
@@ -132,7 +132,7 @@
                             infowindow.marker = null;
                         });
                     }
-                }
+                };
                 // FOURSQUARE
                 // Make AJAX request to Foursquare and only load properties that are available
                 $.ajax({
