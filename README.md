@@ -1,7 +1,9 @@
 # Neighborhood Map Project
 ___
 
-This is an interactive map application of Colorado Ski Resorts utilizing knockout framework, google maps api, and foursquare api
+This is an interactive map application of Colorado Ski Resorts utilizing knockout framework, google maps api, and foursquare api.
+
+[Live Version]( https://sumanhakki.github.io/NeighborhoodMapProject/)
 
 ## Project set-up and features
   - Copy the repo or use the download ZIP link on the right hand side of the screen  and open the index.html file.
